@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>ELYRA — Watches</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="scrollProgress" class="scroll-progress"></div>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo">ELYRA</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="index.html#categories" class="nav__link nav__link--active">Shop</a>
+      <a href="about.html" class="nav__link">About Us</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__icon-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav__icon-btn" aria-label="Wishlist">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <a href="cart.html" class="nav__icon-btn" aria-label="Cart">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      </a>
+      <div class="nav__profile" id="navProfile"><div class="nav__profile-avatar" id="navProfileAvatar">A</div><span id="navProfileName">User</span></div>
+      <a href="login.html" class="nav__login-btn" id="navSignIn">Sign In</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="shop-hero">
+      <span class="shop-hero__label">Classic · Minimal · Sport · Dive</span>
+      <h1 class="shop-hero__title">Watches</h1>
+    </section>
+    <section class="shop-grid-section scroll-animate">
+      <h2 class="shop-grid-section__title">Watches — New Timepieces</h2>
+      <div class="shop-grid">
+
+        <div class="shop-card" data-product-id="wt-1" data-category="watches">
+          <div class="shop-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600&q=85" alt="Timepiece No.5" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="wt-1" aria-label="Wishlist">♡</button>
+            <span class="shop-card__tag">New</span>
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Timepiece No.5</p>
+            <p class="shop-card__price">₹8,999 · Swiss Movement · Stainless Steel</p>
+            <button class="shop-card__btn" data-pid="wt-1">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="wt-2" data-category="watches">
+          <div class="shop-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=600&q=85" alt="Minimal Dial Watch" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="wt-2" aria-label="Wishlist">♡</button>
+            <span class="shop-card__tag">New</span>
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Minimal Dial Watch</p>
+            <p class="shop-card__price">₹6,499 · Sapphire Crystal · Leather Strap</p>
+            <button class="shop-card__btn" data-pid="wt-2">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="wt-3" data-category="watches">
+          <div class="shop-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=600&q=85" alt="Sport Chrono" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="wt-3" aria-label="Wishlist">♡</button>
+            <span class="shop-card__tag">Sale</span>
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Sport Chrono</p>
+            <p class="shop-card__price">₹12,999 · Chronograph · 100m WR</p>
+            <button class="shop-card__btn" data-pid="wt-3">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="wt-4" data-category="watches">
+          <div class="shop-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=85" alt="Rose Gold Classic" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="wt-4" aria-label="Wishlist">♡</button>
+            <span class="shop-card__tag">New</span>
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Rose Gold Classic</p>
+            <p class="shop-card__price">₹9,499 · Rose Gold PVD · Mesh Bracelet</p>
+            <button class="shop-card__btn" data-pid="wt-4">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="wt-5" data-category="watches">
+          <div class="shop-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1553545204-4f7d339aa06a?w=600&q=85" alt="Thin Quartz" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="wt-5" aria-label="Wishlist">♡</button>
+            <span class="shop-card__tag">Sale</span>
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Thin Quartz</p>
+            <p class="shop-card__price">₹4,999 · Ultra-Slim 6mm · Quartz</p>
+            <button class="shop-card__btn" data-pid="wt-5">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="wt-6" data-category="watches">
+          <div class="shop-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=600&q=85" alt="Dive Watch 200m" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="wt-6" aria-label="Wishlist">♡</button>
+            <span class="shop-card__tag">Sale</span>
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Dive Watch 200m</p>
+            <p class="shop-card__price">₹11,499 · 200m WR · Ceramic Bezel</p>
+            <button class="shop-card__btn" data-pid="wt-6">View Product</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom" style="padding:22px 96px 28px;">
+      <p class="footer__copy">&copy; 2026 ELYRA. All rights reserved.</p>
+      <a href="index.html" style="font-size:0.68rem;color:var(--grey);">← Back to Home</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

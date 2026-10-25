@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>ELYRA — Makeup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="scrollProgress" class="scroll-progress"></div>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo">ELYRA</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="index.html#categories" class="nav__link nav__link--active">Shop</a>
+      <a href="about.html" class="nav__link">About Us</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__icon-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav__icon-btn" aria-label="Wishlist">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <a href="cart.html" class="nav__icon-btn" aria-label="Cart">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      </a>
+      <div class="nav__profile" id="navProfile"><div class="nav__profile-avatar" id="navProfileAvatar">A</div><span id="navProfileName">User</span></div>
+      <a href="login.html" class="nav__login-btn" id="navSignIn">Sign In</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="shop-hero">
+      <span class="shop-hero__label">Your Daily Ritual</span>
+      <h1 class="shop-hero__title">Makeup</h1>
+    </section>
+    <section class="shop-grid-section scroll-animate">
+      <h2 class="shop-grid-section__title">Makeup — Top Picks</h2>
+      <div class="shop-grid">
+
+        <div class="shop-card" data-product-id="mk-1" data-category="makeup">
+          <div class="shop-card__img-wrap">
+            <img src="https://static.thcdn.com/images/large/original/productimg/1600/1600/12655788-1735005269660213.jpg" alt="Concealer" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="mk-1" aria-label="Wishlist">♡</button>
+            
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Concealer</p>
+            <p class="shop-card__price">₹699 · Fair / Medium / Deep / Rich</p>
+            <button class="shop-card__btn" data-pid="mk-1">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="mk-2" data-category="makeup">
+          <div class="shop-card__img-wrap">
+            <img src="https://png.pngtree.com/png-clipart/20230425/original/pngtree-eyeshadow-palette-makeup-eye-makeup-color-png-image_9099962.png" alt="Eyeshadow Palette" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="mk-2" aria-label="Wishlist">♡</button>
+          
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Eyeshadow Palette</p>
+            <p class="shop-card__price">₹1,499 · Nudes / Smoky / Colourful</p>
+            <button class="shop-card__btn" data-pid="mk-2">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="mk-3" data-category="makeup">
+          <div class="shop-card__img-wrap">
+            <img src="https://i5.walmartimages.com/seo/Maybelline-Fit-Me-Matte-Poreless-Liquid-Foundation-Makeup-238-Rich-Tan-1-fl-oz_c2c0ccfc-8e83-4dbc-bafe-52f598f93184.5eaa35cce34bb0ba3c9d5617026a4181.jpeg" alt="Foundation" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="mk-3" aria-label="Wishlist">♡</button>
+           
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Foundation</p>
+            <p class="shop-card__price">₹999 · Matte Finish · 12 Shades</p>
+            <button class="shop-card__btn" data-pid="mk-3">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="mk-4" data-category="makeup">
+          <div class="shop-card__img-wrap">
+            <img src="https://m.media-amazon.com/images/I/71F1K2oHiHL.jpg" alt="Makeup Brushes" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="mk-4" aria-label="Wishlist">♡</button>
+         
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Makeup Brushes</p>
+            <p class="shop-card__price">₹1,199 · 12-pc Set · Rose Gold / Black / White</p>
+            <button class="shop-card__btn" data-pid="mk-4">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="mk-5" data-category="makeup">
+          <div class="shop-card__img-wrap">
+            <img src="https://media6.ppl-media.com/tr:h-750,w-750,c-at_max,dpr-2,q-40/static/img/product/348562/insight-intense-kohl-kajal-0-35gm-14-15-15_1_display_1710743271_5262184c.jpg" alt="Intense Kajal" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="mk-5" aria-label="Wishlist">♡</button>
+           
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Intense Kajal</p>
+            <p class="shop-card__price">₹349 · Jet Black / Brown / Navy</p>
+            <button class="shop-card__btn" data-pid="mk-5">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="mk-6" data-category="makeup">
+          <div class="shop-card__img-wrap">
+            <img src="https://th.bing.com/th/id/OIP.vaZpKCmNXDt1bfDA5aYTpgHaFI?w=271&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Matte Lipstick" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="mk-6" aria-label="Wishlist">♡</button>
+          
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Matte Lipstick</p>
+            <p class="shop-card__price">₹449 · Red / Nude Mauve / Deep Berry / Coral</p>
+            <button class="shop-card__btn" data-pid="mk-6">View Product</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom" style="padding:22px 96px 28px;">
+      <p class="footer__copy">&copy; 2026 ELYRA. All rights reserved.</p>
+      <a href="index.html" style="font-size:0.68rem;color:var(--grey);">← Back to Home</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

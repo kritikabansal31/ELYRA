@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELYRA — Heels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="scrollProgress" class="scroll-progress"></div>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo">ELYRA</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="index.html#categories" class="nav__link nav__link--active">Shop</a>
+      <a href="about.html" class="nav__link">About Us</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__icon-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav__icon-btn" aria-label="Wishlist">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </button>
+      <a href="cart.html" class="nav__icon-btn" aria-label="Cart">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      </a>
+      <div class="nav__profile" id="navProfile"><div class="nav__profile-avatar" id="navProfileAvatar">A</div><span id="navProfileName">User</span></div>
+      <a href="login.html" class="nav__login-btn" id="navSignIn">Sign In</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="shop-hero">
+      <span class="shop-hero__label">Stilettos · Block · Kitten · Platform</span>
+      <h1 class="shop-hero__title">Heels</h1>
+    </section>
+    <section class="shop-grid-section scroll-animate">
+      <h2 class="shop-grid-section__title">Heels — New Arrivals</h2>
+      <div class="shop-grid">
+
+        <div class="shop-card" data-product-id="h-1" data-category="heels">
+          <div class="shop-card__img-wrap">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.4Pwef7vfqy1U8XXr3Zms-QHaHa?r=0&pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3" alt="Stiletto Heel" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="h-1" aria-label="Wishlist">♡</button>
+            
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Stiletto Heel</p>
+            <p class="shop-card__price">₹4,299 · Patent Leather · UK 3–8</p>
+            <button class="shop-card__btn" data-pid="h-1">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="h-2" data-category="heels">
+          <div class="shop-card__img-wrap">
+            <img src="data:image/webp;base64,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" alt="Block Heel Sandal" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="h-2" aria-label="Wishlist">♡</button>
+            
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Block Heel Sandal</p>
+            <p class="shop-card__price">₹3,499 · Strappy · UK 3–8</p>
+            <button class="shop-card__btn" data-pid="h-2">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="h-3" data-category="heels">
+          <div class="shop-card__img-wrap">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.e21ShZh3WDfau4Op9pb6AAHaHa?r=0&pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3" alt="Platform Heel" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="h-3" aria-label="Wishlist">♡</button>
+            
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Platform Heel</p>
+            <p class="shop-card__price">₹5,299 · Ankle Strap · UK 3–8</p>
+            <button class="shop-card__btn" data-pid="h-3">View Product</button>
+          </div>
+        </div>
+
+        <div class="shop-card" data-product-id="h-4" data-category="heels">
+          <div class="shop-card__img-wrap">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.z3Y-fDH60o0m4rkXDLZuIAHaJ4?r=0&pid=ImgDet&w=206&h=274&c=7&dpr=1.3&o=7&rm=3" alt="Kitten Heel" loading="lazy"/>
+            <button class="shop-card__wish" data-wish-id="h-4" aria-label="Wishlist">♡</button>
+            
+          </div>
+          <div class="shop-card__body">
+            <p class="shop-card__name">Kitten Heel</p>
+            <p class="shop-card__price">₹2,999 · Pointed Toe · UK 3–8</p>
+            <button class="shop-card__btn" data-pid="h-4">View Product</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom" style="padding:22px 96px 28px;">
+      <p class="footer__copy">&copy; 2026 ELYRA. All rights reserved.</p>
+      <a href="index.html" style="font-size:0.68rem;color:var(--grey);">← Back to Home</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
